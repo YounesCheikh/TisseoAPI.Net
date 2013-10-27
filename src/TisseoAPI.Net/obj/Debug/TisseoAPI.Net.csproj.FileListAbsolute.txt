@@ -1,0 +1,7 @@
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\bin\Debug\TisseoAPI.Net.dll.config
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\bin\Debug\TisseoAPI.Net.dll
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\bin\Debug\TisseoAPI.Net.pdb
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\obj\Debug\TisseoAPI.Net.dll
+C:\Users\cYounes\Documents\Visual Studio 2012\Projects\Tisseo.NET\TisseoAPI.Net\obj\Debug\TisseoAPI.Net.pdb

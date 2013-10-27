@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8AE1AD7-2209-4941-8771-F95E2BE2E2B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TisseoAPI.Net</RootNamespace>
+    <AssemblyName>TisseoAPI.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Core\TisseoDepartureBoard.cs" />
+    <Compile Include="Core\TisseoLines.cs" />
+    <Compile Include="Core\TisseoLinesDisrupted.cs" />
+    <Compile Include="Core\TisseoMessages.cs" />
+    <Compile Include="Core\TisseoPlaces.cs" />
+    <Compile Include="Core\TisseoStopAreas.cs" />
+    <Compile Include="Core\TisseoStopPoints.cs" />
+    <Compile Include="DataParser.cs" />
+    <Compile Include="Helpers\DepartureBoardHelper.cs" />
+    <Compile Include="Helpers\LinesDisruptedHelper.cs" />
+    <Compile Include="Helpers\LinesHelper.cs" />
+    <Compile Include="Helpers\MessagesHelper.cs" />
+    <Compile Include="Helpers\PlacesHelper.cs" />
+    <Compile Include="Helpers\StopAreasHelper.cs" />
+    <Compile Include="Helpers\StopPointsHelper.cs" />
+    <Compile Include="Objects\BBox.cs" />
+    <Compile Include="Objects\Departure.cs" />
+    <Compile Include="Objects\Line.cs" />
+    <Compile Include="Objects\Message.cs" />
+    <Compile Include="Objects\OperatorCode.cs" />
+    <Compile Include="Objects\Place.cs" />
+    <Compile Include="Objects\StopPoint.cs" />
+    <Compile Include="Objects\StopArea.cs" />
+    <Compile Include="Objects\Terminus.cs" />
+    <Compile Include="Objects\TransportMode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TisseoException.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
